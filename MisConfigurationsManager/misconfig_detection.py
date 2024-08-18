@@ -57,6 +57,5 @@ def __branch_protection_rules_enabled(repo_name, branch, branch_name):
     except GithubException as e:
         if e.status == 404:
             print(f"No branch protection found for '{branch_name}' in '{repo_name}'.")
-            # return False
-
+            
     return False

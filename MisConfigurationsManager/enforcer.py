@@ -1,7 +1,7 @@
 from constants import Configurations, BRANCH_NAME, GITHUB_TOKEN, REPO_NAME
 from github import Github, GithubException
 
-def enfore(github_obj, security_risks):
+def enforce(github_obj, security_risks):
     try:
         repo = github_obj.get_repo(REPO_NAME)
 

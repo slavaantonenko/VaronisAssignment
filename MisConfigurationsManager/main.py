@@ -1,5 +1,5 @@
 from constants import GITHUB_TOKEN
-from enforcer import enfore
+from enforcer import enforce
 from misconfig_detection import detect
 from github import Github, GithubException
 
@@ -9,7 +9,7 @@ def main():
         github_obj = Github(GITHUB_TOKEN)
 
         detect(github_obj, security_risks)
-        enfore(github_obj, security_risks)
+        enforce(github_obj, security_risks)
     except GithubException as e:
         print(f"Failed to access github {e.data}")
 
