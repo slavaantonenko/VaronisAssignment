@@ -35,7 +35,8 @@ Most usefull tools are `conda` and `pyenv`
    - Open the `constants.py` file in your project.
    - Replace the placeholder `your_personal_access_token` with the token you copied.
    - Save the changes to `constants.py`.
-2. **Run**: ```python main.py```
+6. **Run**: ```python main.py``` to enforce all misconfigurations.</br>
+You can also run ```python main.py repo``` or ```python main.py branch``` for a specific misconfigurations type.
 
 #### Execution examples
 Repo visibility
